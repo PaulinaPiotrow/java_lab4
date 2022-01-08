@@ -1,7 +1,7 @@
+
 public class Main {
 
     public static void main(String[] args) {
-
         /* zad.1
         a) stworzyć klasę abstrakcyjną Figura
         b) stworzyć metody abstrakcyjne pole() i obwod()
@@ -14,5 +14,19 @@ public class Main {
         c) stworzyć objekty tych klas i wyświetlić przykładowe wyliczenia
         */
 
+        Kwadrat kwdracik = new Kwadrat();
+
+        kwdracik.bok_a = 4;
+
+        System.out.println("pole kwadraciku =  " + kwdracik.pole() );
+        System.out.println("obwod kwadraciku =  " + kwdracik.obwod() );
+
+        Prostokat prostokacik = new Prostokat();
+
+        prostokacik.bok_a = 4;
+        prostokacik.bok_b = 34;
+
+        System.out.println("pole prostokaciku =  " + prostokacik.pole() );
+        System.out.println("obwod prostokaciku =  " + prostokacik.obwod() );
     }
 }
